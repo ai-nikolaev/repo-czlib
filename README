@@ -1,3 +1,12 @@
+HOW-TO-BUILD (VS2012-WIN32):
+- %comspec% /k ""C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat"" x86
+- cmake.exe -G "Visual Studio 11 2012" -A Win32 -S <full-path-to-directory-with-sources>;
+- cmake.exe --build <full-path-to-directory-with-sources> --config <Debug|Release>;
+
+TESTED-WITH:
+- vs 2012;
+- cmake 3.20.2;
+
 ZLIB DATA COMPRESSION LIBRARY
 
 zlib 1.2.11 is a general purpose data compression library.  All the code is
